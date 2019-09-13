@@ -1,17 +1,19 @@
 import React, {Component} from 'react';
+import './App.css';
 import axios from "axios";
 import Header from "./Components/Header/Header";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import Wizard from "./Components/Wizard/Wizard";
-import './App.css';
+import store from "./store";
 
 
 class App extends Component {
   
   constructor(props) {
     super(props);
+    const reduxState = store.getState();
     this.state = {
-        houses: []
+        houses: reduxState.houses
     }
     this.getHouses = this.getHouses.bind(this);
   }

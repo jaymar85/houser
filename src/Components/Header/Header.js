@@ -1,13 +1,12 @@
-import React, {Component} from "react";
+import React from "react";
 import "./Header.css";
 
-export default class Header extends Component {
-    render() {
-        return(
-            <div className="header-bar">
-                
-                <h3><span/>Houser</h3>
-            </div>
-        )
-    }
+function Header() {   
+    return(
+        <div className="header-bar">      
+            <h3><span/>Houser</h3>
+        </div>
+    )
 }
+
+export default Header;
