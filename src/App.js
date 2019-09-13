@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Dashboard />
+        <Dashboard homeListings={this.state.houses}/>
         <Wizard />
       </div>
     );
